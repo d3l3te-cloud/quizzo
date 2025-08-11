@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — Quiz Scores</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <main class="dash-card">
+    <header class="dash-header">
+      <div>
+        <h1 id="welcome"></h1>
+        
+        <p id="user-email"></p>
+      </div>
+      <div class="dash-actions">
+        <button id="start-quiz" class="btn">Start Quiz</button>
+        <button id="signout" class="btn outline">Sign out</button>
+      </div>
+    </header>
+
+    <section>
+      <h2>Your Attempts</h2>
+      <div id="no-data" class="muted">No attempts yet — take the quiz to record a score.</div>
+      <table id="results-table" class="results-table" style="display:none;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Score</th>
+            <th>Total Qs</th>
+            <th>Time</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="results-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

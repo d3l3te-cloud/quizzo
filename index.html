@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign up / Sign in — Firebase + Netlify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Welcome</h1>
+
+    <div id="auth-forms">
+      <form id="signup-form" class="form">
+        <h2>Create account</h2>
+        <!-- inside the signup form -->
+        <input id="signup-email" type="email" placeholder="Email" required />
+        <input id="signup-username" type="text" placeholder="Choose a username" required />  <!-- <--- add this -->
+        <input id="signup-password" type="password" placeholder="Password (min 6 chars)" required />
+
+        <button type="submit" class="btn">Sign up</button>
+      </form>
+
+      <form id="login-form" class="form">
+        <h2>Sign in</h2>
+        <input id="login-email" type="email" placeholder="Email" required />
+        <input id="login-password" type="password" placeholder="Password" required />
+        <button type="submit" class="btn">Sign in</button>
+      </form>
+
+      <div class="divider">OR</div>
+
+      <button id="google-signin" class="btn google">Sign in with Google</button>
+    </div>
+
+    <div id="user-info" style="display:none;">
+      <p id="user-details"></p>
+      <button id="signout" class="btn">Sign out</button>
+    </div>
+
+    <div id="messages" aria-live="polite"></div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+:root{ --bg:#f3f4f6; --card:#fff; --accent:#0b5fff; --muted:#6b7280 }
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:#111}
+.card{width:100%;max-width:480px;background:var(--card);padding:24px;border-radius:12px;box-shadow:0 6px 24px rgba(15,23,42,0.08)}
+h1{margin:0 0 12px;font-size:1.5rem}
+.form{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+input{padding:10px;border:1px solid #e5e7eb;border-radius:8px;font-size:0.95rem}
+.btn{padding:10px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:600;cursor:pointer}
+.btn.google{background:#fff;color:#111;border:1px solid #e5e7eb}
+.divider{margin:8px 0;text-align:center;color:var(--muted)}
+#messages{margin-top:12px;color:var(--muted)}
